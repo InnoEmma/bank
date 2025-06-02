@@ -672,3 +672,120 @@ h4 {
   font-size: 1.5rem;
   font-weight: 400;
 }
+
+
+@media (max-width: 500px) {
+  /* Reduce section padding */
+  .section {
+    padding: 5rem 1.5rem;
+  }
+
+  /* Header adjustments */
+  .header {
+    padding: 0 1.5rem;
+  }
+
+  .header__title {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .header__img {
+    grid-column: auto;
+    grid-row: auto;
+    transform: translateY(0);
+    margin: 2rem auto 0 auto;
+    width: 80%;
+    justify-self: center;
+  }
+
+  /* Headings smaller */
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h4 {
+    font-size: 1.8rem;
+  }
+
+  /* Buttons smaller */
+  .btn {
+    font-size: 1.4rem;
+    padding: 1rem 3rem;
+  }
+
+  /* Navigation - stack and reduce padding */
+  .nav {
+    flex-direction: column;
+    padding: 1rem 1.5rem;
+    height: auto;
+  }
+
+  .nav__links {
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
+  .nav__item {
+    margin-left: 0;
+    margin-bottom: 1rem;
+  }
+
+  /* Features - single column */
+  .features {
+    grid-template-columns: 1fr;
+    margin: 0 2rem;
+    gap: 2rem;
+  }
+
+  .features__feature {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Operations content - single column */
+  .operations__content--active {
+    grid-template-columns: 1fr;
+    padding: 2rem 1.5rem 4rem 1.5rem;
+  }
+
+  .operations__header {
+    font-size: 1.8rem;
+  }
+
+  /* Slider smaller height */
+  .slider {
+    height: 30rem;
+  }
+
+  /* Testimonials narrower */
+  .testimonial {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .testimonial::before {
+    font-size: 10rem;
+    top: -3rem;
+    left: -3rem;
+  }
+
+  /* Signup section padding */
+  .section--sign-up {
+    padding: 6rem 1.5rem;
+  }
+
+  /* Footer adjustments */
+  .footer {
+    padding: 6rem 1.5rem;
+  }
+
+  .footer__nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__item {
+    margin: 0 0 1rem 0;
+  }
+}
